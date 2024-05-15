@@ -1,0 +1,5 @@
+- user inputs nums
+- nums goes inside query string
+- i want to get out nums into json
+- then take the json data and perform some math operation on it
+- return the result to the user

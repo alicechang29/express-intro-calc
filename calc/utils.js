@@ -6,6 +6,12 @@ import { BadRequestError } from "./expressError.js";
 function convertStrNums(strNums) {
   // if the conversion isn't successful, throw a BadRequestError and will
   // be handled in your route
+  strNums = strNums.split(",");
+  const nums = [];
+  for (let strNum of strNums) {
+    nums.push(Number(strNum));
+  }
+  return nums;
 }
 
 
